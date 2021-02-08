@@ -115,7 +115,7 @@ class _Pagina2State extends State<Pagina2> {
                 'Let\'s find Peace',
                 style: TextStyle(
                   fontFamily: 'PlayFair',
-                  fontSize: 28.0,
+                  fontSize: 20.0.sp,
                   color: Color.fromRGBO(33, 45, 82, 1)
                 ),
               ),
@@ -126,7 +126,7 @@ class _Pagina2State extends State<Pagina2> {
                 'with Comfort.',
                 style: TextStyle(
                   fontFamily: 'PlayFair',
-                  fontSize: 28.0,
+                  fontSize: 20.0.sp,
                   color: Color.fromRGBO(33, 45, 82, 1)
                 ),
               ),
@@ -146,8 +146,8 @@ class _Pagina2State extends State<Pagina2> {
                     return _currentIndex == index ? 
                      
                       Container(
-                        width: 18.0,
-                        height: 9.0,
+                        width: 4.0.w,
+                        height: 1.0.h,
                         margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 2.0),
                           decoration: BoxDecoration(
                               color: Color.fromRGBO(71, 148, 255, 1),
@@ -157,8 +157,8 @@ class _Pagina2State extends State<Pagina2> {
 
                       Container(
 
-                        width: 9.0,
-                        height: 9.0,
+                        width: 2.0.w,
+                        height: 2.0.h,
                         margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 2.0),
                         decoration: BoxDecoration(
                             shape:  BoxShape.circle,
