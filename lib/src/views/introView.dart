@@ -1,8 +1,10 @@
 import 'package:airbnb/size_helpers.dart';
 import 'package:airbnb/src/cards/cards.dart';
+import 'package:airbnb/src/views/singUpView.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:sizer/sizer.dart';
 
 class Intro extends StatelessWidget {
   const Intro({Key key}) : super(key: key);
@@ -31,8 +33,8 @@ class Pagina extends StatelessWidget {
         return  Center(
           child: SvgPicture.asset(
             'assets/images/airbnbLogo.svg',
-           height: 148.0,
-           width: 130.0,
+           height: 18.0.h,
+           width: 12.0.w,
            )
         );
   }
@@ -68,7 +70,7 @@ class _Pagina2State extends State<Pagina2> {
             child: 
             CarouselSlider(
               options: CarouselOptions(
-                height: 528.0,
+                height: 61.0.h,
                 //aspectRatio: 1.0,
                 autoPlay: false,
                 viewportFraction: 1,
@@ -86,13 +88,17 @@ class _Pagina2State extends State<Pagina2> {
               items: cardList.map((card) {
                 return Builder(builder: (BuildContext context) {
                   return Container(
-                    width: displayWidth(context) * 1.0,
+
+                    width: displayWidth(context) * 1,
+                    height: displayWidth(context) * 0.9, //Con esto manejamos el ratio de la imagen
+
                     decoration: BoxDecoration(
+                      
                       color: Color.fromRGBO(240, 242, 243, 1),
                       //borderRadius: BorderRadius.circular(30),
                     ),
                     //height: MediaQuery.of(context).size.height * 0.9,
-                    // width: MediaQuery.of(context).size.width * 0.45,
+                  // width: MediaQuery.of(context).size.width * 0.45,
                     child: ClipRRect(
                       //borderRadius: BorderRadius.circular(20),
                       child: FittedBox(child: card, fit: BoxFit.cover),
@@ -104,7 +110,7 @@ class _Pagina2State extends State<Pagina2> {
           ),
           ListTile(
             title: Container(
-              padding: EdgeInsets.only(left: 12.0),
+              padding: EdgeInsets.only(left: 2.0.w),
               child: Text(
                 'Let\'s find Peace',
                 style: TextStyle(
@@ -115,7 +121,7 @@ class _Pagina2State extends State<Pagina2> {
               ),
             ),
             subtitle: Container(
-              padding: EdgeInsets.only(left: 12.0),
+              padding: EdgeInsets.only(left: 2.0.w),
               child: Text(
                 'with Comfort.',
                 style: TextStyle(
@@ -131,7 +137,7 @@ class _Pagina2State extends State<Pagina2> {
              // padding: EdgeInsets.only(top: 246.0),
               
               child: Container(
-                padding: EdgeInsets.only(right: 288.0),
+                padding: EdgeInsets.only(right: 76.0.w),
                 child: Row(
                   
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -165,14 +171,14 @@ class _Pagina2State extends State<Pagina2> {
             ),
 
             SizedBox(
-              height: 38.0
+              height: 8.0.h
             ),
 
             Center(
               child: 
               Container(  
-                height: 56.0,
-                width: 334.0,            
+                height: 7.0.h,
+                width: 90.0.w,            
                 decoration: BoxDecoration(
                   color: Color.fromRGBO(71, 148, 255, 1),
                   borderRadius: BorderRadius.all(Radius.circular(10.0))
@@ -199,16 +205,23 @@ class _Pagina2State extends State<Pagina2> {
                 Text(
                   'Have an Account?',
                   style: TextStyle(
-                    color: Color.fromRGBO(33, 45, 82, 1)
+                    fontSize: 11.0.sp,
+                    color: Color.fromRGBO(33, 45, 82, 1),
+                    fontWeight: FontWeight.w400
                   ),
                 ),
                 TextButton(
-                  onPressed: (){},
+                  onPressed: (){
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SingUp()),
+                        );
+                  },
                   child: Text(
                     'Sing in',
                     style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.bold,
+                      fontSize: 13.0.sp,
+                      fontWeight: FontWeight.w500,
                       color: Color.fromRGBO(33, 45, 82, 1)
                     )
                   ),
