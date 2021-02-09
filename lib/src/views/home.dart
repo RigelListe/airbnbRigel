@@ -176,7 +176,7 @@ class _HomeState extends State<Home> {
 
     Widget _searchApartament(){
       return Container(
-        height: 8.2.h,
+        height: 7.6.h,
         width: 88.0.w,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.0),
@@ -193,10 +193,10 @@ class _HomeState extends State<Home> {
           controller: _searchController,
           decoration: InputDecoration (    
             suffixIcon: Padding(
-              padding: EdgeInsets.only(top: 6.0, right: 5.0),
+              padding: EdgeInsets.only(top: 1.0.w, right: 1.0.w),
               child: Container(
-                width: 50.0,
-                height: 50.0,
+                width: 6.6.h,
+                height: 6.6.h,
                 decoration: BoxDecoration(
                   color: Color.fromRGBO(71, 148, 255, 1),
                   borderRadius: BorderRadius.circular(10.0)
@@ -206,7 +206,7 @@ class _HomeState extends State<Home> {
                   icon: Icon(
                     Icons.search,
                     color: Colors.white,
-                    size: 36,
+                    size: 30,
                   ),
                 ),
               ),

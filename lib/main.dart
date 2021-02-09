@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
             SizerUtil().init(constraints, orientation);  //initialize SizerUtil
             return MaterialApp(
               debugShowCheckedModeBanner: false,
-              home: Intro(),
+              home: Home(),
             );
           },
         );
