@@ -313,7 +313,7 @@ class _DetailState extends State<Detail> {
                                 ), 
                               ),
                             ),
-                        SizedBox(height: 4.0.h),   
+                        SizedBox(height: 4.88.h),   
 
                         Container(
                           width: double.infinity,
