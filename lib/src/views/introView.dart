@@ -70,7 +70,7 @@ class _Pagina2State extends State<Pagina2> {
             child: 
             CarouselSlider(
               options: CarouselOptions(
-                height: 61.0.h,
+                height: 64.0.h,
                 //aspectRatio: 1.0,
                 autoPlay: false,
                 viewportFraction: 1,
@@ -148,7 +148,7 @@ class _Pagina2State extends State<Pagina2> {
                       Container(
                         width: 4.0.w,
                         height: 1.0.h,
-                        margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 2.0),
+                        margin: EdgeInsets.symmetric(vertical: 1.0.h, horizontal: 2.0),
                           decoration: BoxDecoration(
                               color: Color.fromRGBO(71, 148, 255, 1),
                               borderRadius: BorderRadius.circular(30),
@@ -159,7 +159,7 @@ class _Pagina2State extends State<Pagina2> {
 
                         width: 2.0.w,
                         height: 2.0.h,
-                        margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 2.0),
+                        margin: EdgeInsets.symmetric(vertical: 1.0.h, horizontal: 2.0),
                         decoration: BoxDecoration(
                             shape:  BoxShape.circle,
                             color: Color.fromRGBO(71, 148, 255, 0.3),
@@ -171,7 +171,7 @@ class _Pagina2State extends State<Pagina2> {
             ),
 
             SizedBox(
-              height: 8.0.h
+              height: 5.0.h
             ),
 
             Center(
